@@ -7,10 +7,10 @@ API_TOKEN = '7836300949:AAG3XWsj2pJYPXg0GPaOrsF_DxGD1sGevnk'
 bot = telebot.TeleBot(API_TOKEN)
 
 connection = mysql.connector.connect(
-    host='amir9909.mysql.pythonanywhere-services.com',
-    user='amir9909',
-    password='Waltherlg400',
-    database='amir9909$seganj',
+    host='mysql://root:DvpMLyvpYUWKocjWRnABrIorvfmSsAeA@mysql.railway.internal:3306/railway',
+    user='root',
+    password='DvpMLyvpYUWKocjWRnABrIorvfmSsAeA',
+    database='railway',
     autocommit=True
 )
 cursor = connection.cursor()
